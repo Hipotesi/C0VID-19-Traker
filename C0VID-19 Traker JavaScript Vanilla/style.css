@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+img {
+  width: 200px;
+  display: block;
+}
+
+.wordlwide {
+  background-color: antiquewhite;
+  height: 282px;
+}
+
+.philippines {
+  background-color: aquamarine;
+  height: 282px;
+}
+
+.wordlwide,
+.philippines {
+  flex: 1;
+  padding: 50px 0;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  display: none;
+}
+
+.container {
+  max-width: 1150px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.world__status,
+.phil__status {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.status__item {
+  width: 20%;
+}
+
+.status__item p {
+  text-transform: uppercase;
+}
+
+.confirmed {
+  color: #8d92bb;
+}
+
+.deaths {
+  color: #f86aa0;
+}
+
+.recovered {
+  color: brown;
+}
+
+@media (min-width: 650px) {
+  .world__status,
+  .phil__status {
+    justify-content: flex-start;
+  }
+
+  .image {
+    display: block;
+  }
+}
+
+@media (min-width: 1300px) {
+  .row {
+    display: flex;
+  }
+}
+
+.search {
+  padding: 50px;
+}
+
+.search__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.search form {
+  width: 100%;
+  max-width: 527px;
+}
+
+.search__container {
+  display: flex;
+}
+
+.search__container input {
+  width: 100%;
+  border: 1px solid #eee;
+  padding: 10px 20px;
+  background-color: #b2c9ec;
+  outline: none;
+}
+
+.search__container input::placeholder {
+  color: #000;
+}
+
+.search__container button {
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: darksalmon;
+  padding: 2px 20px;
+  color: #fff;
+  outline: none;
+  position: relative;
+  right: 1px;
+}
+
+.search__result {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.search__result img {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .flag,
+  ul {
+    width: 100%;
+  }
+}
+
+.error {
+  display: block;
+  background-color: crimson;
+  color: #fff;
+  padding: 5px;
+}
+
+.loader {
+  display: block;
+  margin: 0 auto;
+}
